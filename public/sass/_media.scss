@@ -1,0 +1,33 @@
+﻿/* Large Devices and Wide Screen */
+@media only screen and (max-width: 1200px) {
+
+    .services_scss {
+        justify-content:center;
+        .container_grobal {
+            grid-template-columns: repeat(2, minmax(100px,560px));
+            div:nth-child(5)
+            {
+                grid-column:1/-1;
+                grid-row: 1;
+            }
+        }
+    }
+
+   
+}
+
+@media only screen and (max-width: 992px) {
+    .services_scss {
+        justify-content: center;
+        padding: 5px;
+
+        .container_grobal {
+            grid-template-columns: repeat(1, minmax(100px,560px));
+        }
+    }
+}
+
+
+
+
+
