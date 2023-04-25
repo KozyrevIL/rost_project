@@ -1,7 +1,13 @@
-@extends('layouts.master')
+@extends('layouts.adminMaster')
 
+@section('headContent')
+<x-head.tinymce-config/>
+@endsection
 
 @section('content')
+
+
+
 <form action="{{route('admin.pageBlock.update',[$page->id,$pageBlock->id])}}" method="post" enctype="multipart/form-data">
   @csrf
   @method('patch')
@@ -16,7 +22,7 @@
   </div>
   <div class="mb-3">
     <label for="caption" class="form-label">Заголовок</label>
-    <input type="text" class="form-control" id="description" name="caption" placeholder="Заголовок" value="{{$pageBlock->description}}">
+    <input type="text" class="form-control" id="caption" name="caption" placeholder="Заголовок" value="{{$pageBlock->caption}}">
   </div>
   <div class="mb-3">
     <label for="description" class="form-label">Краткое описание</label>

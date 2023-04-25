@@ -133,7 +133,19 @@ input[type="select"] {
         min-height: 135px;
     }
 }
+@media only screen and (max-width: 1782px) {
+    #SearchBlock_row_sm {
+        display: block;
+    }
+    #services_block {
+        min-height: 165px;
+    }
+    #SearchBlock {
+        display: none;
+    }
 
+    
+}
     @media only screen and (max-width: 1570px) {
 
         #services_block {

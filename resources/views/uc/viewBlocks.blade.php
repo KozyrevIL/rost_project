@@ -13,15 +13,15 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4">
                     <div>
                         <div class="card border-secondary p-0"  class="align-items-center">
-                            <a href="#"><img src="{{asset($row->item)}}?w=299&h=168" /></a>
+                            <a href="{{route('textBlock',$row->id)}}"><img src="{{asset($row->item)}}?w=299&h=168" /></a>
 
                             <div class="card-body">
                                 <h5 class="card-title" style="overflow: hidden; height: 70px">
-                                    <span>{{$row->description}}</span>
+                                    <span>{{$row->caption}}</span>
                                 </h5>
-                                <a href="#">
+                                <a href="{{route('textBlock',$row->id)}}">
                                     <p class="card-text" style="overflow: hidden; height: 125px">
-                                        <span>{{$row->page_text}}</span>
+                                        <span>{{$row->description}}</span>
                                     </p>
                                 </a>
                             </div>

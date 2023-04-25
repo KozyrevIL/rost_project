@@ -1,7 +1,17 @@
-@extends('layouts.master')
+@extends('layouts.adminMaster')
 
 
 @section('content')
+
+<script src="https://cdn.tiny.cloud/1/wjcn6ongpwxdcp43s42z2q5bhusr47r0wic15m039fjouuad/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+   tinymce.init({
+     selector: 'textarea#page_text', // Replace this CSS selector to match the placeholder element for TinyMCE
+     plugins: 'powerpaste advcode table lists checklist',
+     toolbar: 'undo redo | blocks| bold italic | bullist numlist checklist | code | table'
+   });
+</script>
+
 <form action="{{route('admin.pageBlock.store',[$page->id])}}" method="post" enctype="multipart/form-data">
   @csrf
   <h1>Добавить данные для страницы {{$page->name}}</h1>

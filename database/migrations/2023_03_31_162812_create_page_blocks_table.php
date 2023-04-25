@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('caption',500)->nullable();
             $table->string('description',1000)->nullable();
             $table->text('page_text')->nullable();
+            $table->timestamp('date_text')->nullable();
+            $table->boolean('visible')->nullable();
             $table->string('item')->nullable();
         });
     }

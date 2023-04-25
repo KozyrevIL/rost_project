@@ -9,6 +9,6 @@ class TextBlockController extends Controller
 {
     public function __invoke(PageBlock $pageBlock)
     {
-        return view('pageBlock.index', compact('pageBlocks','page'));
+        return view('textBlock', compact('pageBlock'));
     }
 }

@@ -1,0 +1,2 @@
+
+{!!$textBlock->page_text!!}

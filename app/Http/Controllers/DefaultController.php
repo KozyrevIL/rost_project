@@ -9,9 +9,11 @@ class DefaultController extends Controller
 {
     public function index()
     {
-        $sliders = PageBlock::where('id_page',2)->get();
-        $articles = PageBlock::where('id_page',2)->orderBy('pos')->limit(6)->get();
-       
-        return view('default', compact('sliders','articles'));
+        $slider = PageBlock::mainSelect()->where('id_page',4)->get();
+        $articles = PageBlock::where('id_page',1)->orderBy('pos')->orderBy('id', 'DESC')->limit(6)->get();
+        $imagesTravma = PageBlock::where('id_page',13)->orderBy('pos')->limit(5)->get();
+        $about = PageBlock::where('id',9)->first();
+        $imagesLicence= PageBlock::where('id_page',10)->orderBy('pos')->limit(5)->get();
+        return view('default', compact('slider','articles','imagesTravma','about','imagesLicence'));
     }
 }
