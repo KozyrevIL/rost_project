@@ -2,6 +2,13 @@
 
 
 @section('content')
+
+@if(session('message'))
+<div class='alert alert-success'>
+    {{ session('message') }}
+</div>
+@endif
+
 <a href="{{route('admin.pageBlock.create',$page->id)}}" class="btn btn-secondary">Добавить</a>
 <h1>Содержание страницы портала <b>{{ $page->name }}</b></h1>
 <table class="table caption-top">
@@ -18,15 +25,24 @@
     <tbody>
         @foreach ($pageBlocks as $pageBlock)
         <tr>
-            <td><a name="page_edit" href="{{route('admin.pageBlock.edit',[$page->id,$pageBlock->id])}}">edit</a></td>
+            <td><a class="btn btn-primary" name="page_edit" href="{{route('admin.pageBlock.edit',[$page->id,$pageBlock->id])}}">edit</a>
+                <form method="post">
+                    @csrf
+                    @method('DELETE')
+                    <button class="btn btn-danger" type="submit" onclick="return confirm('Удалить запись на странице?');" formaction="{{route('admin.pageBlock.delete',[$page->id,$pageBlock->id])}}">Удалить</button>
+                </form>
+            </td>
+
             <th scope="row">{{$pageBlock->id}}</th>
             <td>{{$pageBlock->pos}}</td>
             <td>{{$pageBlock->description}}</td>
             <td>{{$pageBlock->page_text}}</td>
             <td>{{$pageBlock->item}}</td>
             <!-- <td><image src="{{asset('storage/'.$pageBlock->item)}}"></image></td> -->
-            <td><image src="{{asset($pageBlock->item)}}?w=80&h=80"></image></td> 
-            </tr>
+            <td>
+                <image src="{{asset($pageBlock->item)}}?w=80&h=80"></image>
+            </td>
+        </tr>
         @endforeach
     </tbody>
 </table>

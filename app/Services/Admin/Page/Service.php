@@ -3,6 +3,7 @@
 namespace App\Services\Admin\Page;
 
 use App\Models\Page;
+use App\Models\PageBlock;
 
 class Service
 {
@@ -16,4 +17,9 @@ class Service
     $page->update($data);
   }
 
+  public function delete($page)
+  {
+    PageBlock::where("id_page", $page->id)->delete();
+    $page->delete();
+  }
 }

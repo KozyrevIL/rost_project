@@ -32,7 +32,13 @@
                     </tr>
                     @foreach ($CallBacks as $Record)
                     <tr class="table info">
-                        <td></td>
+                        <td>
+                            <form method="post">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-danger" type="submit" onclick="return confirm('Удалить запись?');" formaction="{{route('admin.callBack.delete',[$Record->id])}}">Удалить</button>
+                            </form>
+                        </td>
                         <td>{{$Record->id}}</td>
                         <td><textarea class="form-control">{{$Record->post_data}}</textarea></td>
                         <td>{{$Record->fio}}</td>
@@ -45,6 +51,7 @@
                                 <input type="text" class="form-control" id="comments" name="comments" placeholder="Введите комментарий" value="{{$Record->comments}}">
                                 <button type="submit" class="btn btn-primary">Сохранить</button>
                             </Form>
+
                         </td>
                     </tr>
                     @endforeach

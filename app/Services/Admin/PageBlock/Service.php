@@ -16,4 +16,10 @@ class Service
     $pageBlock->update($data);
   }
 
+  public function delete($pageBlock)
+  {
+    $pageBlock->delete();
+  }
+
+
 }

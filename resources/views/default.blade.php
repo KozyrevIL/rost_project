@@ -131,32 +131,32 @@
 <section class="services_scss grid">
   <div class="container_grobal grid">
     <div class="item_block">
-      <a class="header" href=".././desc?id_text=383"><img src="Images/Temp_img/Аутсорсинг_блок%201.png" /></a>
+      <a class="header" href=".././desc?id_text=383"><img src="Images/Temp_img/autsorce1.png" /></a>
     </div>
     <div class="item_block">
-      <a class="header" href=".././desc?id_text=383"><img src="Images/Temp_img/Аутсорсинг_блок%202.png" /></a>
+      <a class="header" href=".././desc?id_text=383"><img src="Images/Temp_img/autsorce2.png" /></a>
     </div>
 
     <div class="item_block">
-      <a class="header" href=".././desc?id_text=383"><img src="Images/Temp_img/Аутсорсинг_блок%203.png" /></a>
+      <a class="header" href=".././desc?id_text=383"><img src="Images/Temp_img/autsorce3.png" /></a>
     </div>
     <div class="item_block">
-      <a class="header" href=".././desc?id_text=383"><img src="Images/Temp_img/Аутсорсинг_блок%204.png" /></a>
+      <a class="header" href=".././desc?id_text=383"><img src="Images/Temp_img/autsorce4.png" /></a>
     </div>
     <div class="item_block">
       <h1 class="text-center"><a class="header" href=".././desc?id_text=383">УСЛУГИ</a></h1>
     </div>
     <div class="item_block">
-      <a class="header" href=".././desc?id_text=383"><img src="Images/Temp_img/Аутсорсинг_блок%206.png" /></a>
+      <a class="header" href=".././desc?id_text=383"><img src="Images/Temp_img/autsorce6.png" /></a>
     </div>
     <div class="item_block">
-      <a class="header" href=".././desc?id_text=383"><img src="Images/Temp_img/Аутсорсинг_блок%207.png" /></a>
+      <a class="header" href=".././desc?id_text=383"><img src="Images/Temp_img/autsorce7.png" /></a>
     </div>
     <div class="item_block">
-      <a class="header" href=".././desc?id_text=383"><img src="Images/Temp_img/Аутсорсинг_блок%208.png" /></a>
+      <a class="header" href=".././desc?id_text=383"><img src="Images/Temp_img/autsorce8.png" /></a>
     </div>
     <div class="item_block">
-      <a class="header" href=".././desc?id_text=383"><img src="Images/Temp_img/Аутсорсинг_блок%209.png" /></a>
+      <a class="header" href=".././desc?id_text=383"><img src="Images/Temp_img/autsorce9.png" /></a>
     </div>
   </div>
 </section>

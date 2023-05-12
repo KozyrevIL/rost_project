@@ -25,6 +25,7 @@ Route::prefix('admin')->namespace('App\Http\Controllers\Admin')->middleware('aut
         Route::post('/pages', 'StoreController')->name('admin.page.store');
         Route::get('/pages/{page}/edit', 'EditController')->name('admin.page.edit');
         Route::patch('/page/{page}', 'UpdateController')->name('admin.page.update');
+        Route::delete('/page/{page}', 'DeleteController')->name('admin.page.delete');
     });
     Route::group(['namespace' => 'PageBlock'], function () {
         Route::get('/page_blocks/{page}', 'IndexController')->name('admin.pageBlock.index');
@@ -32,11 +33,13 @@ Route::prefix('admin')->namespace('App\Http\Controllers\Admin')->middleware('aut
         Route::post('/page_blocks/{page}', 'StoreController')->name('admin.pageBlock.store');
         Route::get('/page_blocks/{page}/{pageBlock}/edit', 'EditController')->name('admin.pageBlock.edit');
         Route::patch('/page_blocks/{page}/{pageBlock}', 'UpdateController')->name('admin.pageBlock.update');
+        Route::delete('/page_blocks/{page}/{pageBlock}', 'DeleteController')->name('admin.pageBlock.delete');
     });
     Route::group(['namespace' => 'CallBack'], function () {
         Route::get('/call_backs', 'IndexController')->name('admin.callBack.index');
 //        Route::get('/call_backs/{callBack}/edit', 'EditController')->name('admin.callBack.edit');
         Route::patch('/call_backs/{callBack}', 'UpdateController')->name('admin.callBack.update');
+        Route::delete('/call_backs/{callBack}', 'DeleteController')->name('admin.callBack.delete');
     });
 
 });

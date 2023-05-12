@@ -16,6 +16,11 @@ class Service
     $callBack->update($data);
   }
 
+  public function delete($callBack)
+  {
+    $callBack->delete();
+  }
+
   public function select()
   {
     return CallBack::orderBy('created_at','DESC')->paginate(50);

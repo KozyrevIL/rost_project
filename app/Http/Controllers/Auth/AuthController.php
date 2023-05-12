@@ -33,7 +33,7 @@ class AuthController extends Controller
         Auth::loginUsingId($user->id);
 
         return redirect()
-                ->route('admin.pages')
+                ->route('admin')
                 ->with('success', 'Вы успешно зарегистрировались');
     }    
     public function Logout(Request $request)

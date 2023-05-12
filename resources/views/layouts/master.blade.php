@@ -57,12 +57,12 @@
     </noscript>
     <!-- /Yandex.Metrika counter -->
 
-    <img src={{ asset('Images/banner_bg_left.png'); }} style="position: absolute; left: 0px;" class="img-fluid d-none d-md-block" />
-    <img src={{ asset('Images/banner_bg_left.png'); }} style="position: absolute; right: 0px; transform: scale(-1, -1);" class="img-fluid d-none d-md-block" />
+    <img src="{{ asset('Images/banner_bg_left.png'); }}" style="position: absolute; left: 0px;" class="img-fluid d-none d-md-block" />
+    <img src="{{ asset('Images/banner_bg_left.png'); }}" style="position: absolute; right: 0px; transform: scale(-1, -1);" class="img-fluid d-none d-md-block" />
     <div class="container" id="banner">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                <img src="{{asset('Images/logo.png')}}" id="logo" style="margin-top: 11px;" class="img-fluid" />
+                <img src="{{asset('Images\logo.png')}}" id="logo" style="margin-top: 11px;" class="img-fluid" />
             </div>
 
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 d-none d-sm-block">
@@ -71,23 +71,23 @@
                     <div class="row" id="social_banner">
                         <div class="col-2">
                             <a href="https://vk.com/club191854002" target="_top">
-                                <img src="{{asset('Images/Icons/icon_vk.png')}}" /></a>
+                                <img src="{{asset('Images\Icons/icon_vk.png')}}" /></a>
                         </div>
                         <div class="col-2">
                             <a href="https://www.instagram.com/" target="_top">
-                                <img src="{{asset('Images/Icons/icon_phone.png')}}" /></a>
+                                <img src="{{asset('Images\Icons/icon_phone.png')}}" /></a>
                         </div>
                         <div class="col-2">
                             <a href="https://www.facebook.com/" target="_top">
-                                <img src="{{asset('Images/Icons/icon_face.png')}}" /></a>
+                                <img src="{{asset('Images\Icons/icon_face.png')}}" /></a>
                         </div>
                         <div class="col-2">
                             <a href="https://ok.ru/group/62455457251391" target="_top">
-                                <img src="{{asset('Images/Icons/icon_ok.png')}}" /></a>
+                                <img src="{{asset('Images\Icons/icon_ok.png')}}" /></a>
                         </div>
                         <div class="col-2">
                             <a href="https://mail.ru" target="_top">
-                                <img src="{{asset('Images/Icons/icon_mail.png')}}" /></a>
+                                <img src="{{asset('Images\Icons/icon_mail.png')}}" /></a>
                         </div>
                         <div class="col-2">
                         </div>
@@ -253,24 +253,24 @@
 
                                 <li class="list-inline-item">
                                     <a href="https://vk.com/club191854002" target="_top">
-                                        <img src="{{asset('Images/Icons/icon_vk.png')}}" /></a>
+                                        <img src="{{asset('Images\Icons/icon_vk.png')}}" /></a>
                                 </li>
 
                                 <li class="list-inline-item">
                                     <a href="https://www.instagram.com/" target="_top">
-                                        <img src="{{asset('Images/Icons/icon_phone.png')}}" /></a>
+                                        <img src="{{asset('Images\Icons/icon_phone.png')}}" /></a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="https://www.facebook.com/" target="_top">
-                                        <img src="{{asset('Images/Icons/icon_face.png')}}" /></a>
+                                        <img src="{{asset('Images\Icons/icon_face.png')}}" /></a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="https://ok.ru/group/62455457251391" target="_top">
-                                        <img src="{{asset('Images/Icons/icon_ok.png')}}" /></a>
+                                        <img src="{{asset('Images\Icons/icon_ok.png')}}" /></a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="https://mail.ru" target="_top">
-                                        <img src="{{asset('Images/Icons/icon_mail.png')}}" /></a>
+                                        <img src="{{asset('Images\Icons/icon_mail.png')}}" /></a>
                                 </li>
 
                             </ul>

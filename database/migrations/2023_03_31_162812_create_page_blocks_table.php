@@ -22,6 +22,7 @@ return new class extends Migration
             $table->timestamp('date_text')->nullable();
             $table->boolean('visible')->nullable();
             $table->string('item')->nullable();
+            $table->softDeletes();
         });
     }
 
